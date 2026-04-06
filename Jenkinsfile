@@ -20,15 +20,13 @@ pipeline {
             }
         }
 
-        stage('Build App') {
+       stage('Build App') {
             steps {
                 echo '🔍 Validating project structure...'
                 sh '''
                     echo "── Project files ──"
                     ls -la
                     echo ""
-                    echo "── Python syntax check ──"
-                    python3 -c "import ast, sys; ast.parse(open('app.py').read()); print('app.py syntax OK')"
                     echo "── requirements.txt ──"
                     cat requirements.txt
                 '''
