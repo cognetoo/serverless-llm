@@ -6,7 +6,7 @@ pipeline {
         CONTAINER_NAME = "neuraldock-app"
         APP_PORT      = "5000"
         // Store your Gemini API key as a Jenkins credential (Secret Text) named GEMINI_API_KEY
-        GEMINI_API_KEY = credentials('GEMINI_API_KEY')
+        GEMINI_API_KEY = "AIzaSyAkXHALrN__eOQHYoBlYgXOn1ptv7U95k4"
     }
 
     stages {
